@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #FFC0CB;
+    font-family: 'Arial', sans-serif;
+    flex-direction: column;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #d32f2f;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .yes-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .no-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .gif_container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+@keyframes floatHearts {
+    0% { transform: translateY(100vh) scale(0.5); opacity: 1; }
+    100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+}
+
+.hearts-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    clip-path: path("M10 30 A10 10 0 1 1 30 10 A10 10 0 1 1 50 30 Q30 50 10 30Z");
+    animation: floatHearts 5s linear infinite;
+}
+
+
+@keyframes floatHearts {
+    0% { transform: translateY(100vh) scale(0.5); opacity: 1; }
+    100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+}
+
+.hearts-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    background-color: #ff0000; /* Bright Red */
+    clip-path: path("M12 4 C12 -2, 20 -2, 20 4 C20 8, 16 12, 12 16 C8 12, 4 8, 4 4 C4 -2, 12 -2, 12 4 Z");
+    animation: floatHearts 6s linear infinite;
+    opacity: 0.9; /* More visibility */
+}
+
+
+@keyframes floatHearts {
+    0% { transform: translateY(100vh) scale(0.5); opacity: 1; }
+    100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+}
+
+.hearts-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    background-color: #cc0000; /* Darker, more vibrant red */
+    clip-path: path("M12 4 C12 -2, 20 -2, 20 4 C20 8, 16 12, 12 16 C8 12, 4 8, 4 4 C4 -2, 12 -2, 12 4 Z");
+    animation: floatHearts 6s linear infinite;
+    opacity: 1; /* Fully visible */
+}

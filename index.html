@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Will you be my Valentine? PLEASE</h1>
+        <div class="buttons">
+            <button class="yes-button" onclick="handleYesClick()">Yes</button>
+            <button class="no-button" onclick="handleNoClick()">No</button>
+        </div>
+        <div class="gif_container">
+            <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmxodXIwNWQzbWxvOWN5bm10OHFwbDZxNjlhaXIyN2NkdmFyMHQybyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mp7s6iVOTPMU2eXjLo/giphy.gif" alt="Cute GIF">
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+<!-- Floating Hearts Script -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const heartsContainer = document.createElement("div");
+    heartsContainer.classList.add("hearts-container");
+    document.body.appendChild(heartsContainer);
+
+    function createHeart() {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+        heartsContainer.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 50000);
+    }
+
+    setInterval(createHeart, 100);
+});
+</script>
+</body>
+</html>
